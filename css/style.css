@@ -1,0 +1,150 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+/* *::selection {
+  background-color: black;
+  color: #fff;
+} */
+body {
+  background-color: #777 !important;
+}
+/* ------------------------------ header -------------------------- */
+.nav-sec a {
+  color: rgb(255, 255, 255);
+}
+.nav-sec a:hover {
+  color: #fff;
+}
+.logo-title {
+  /* font-weight: 700; */
+  font-size: 22px;
+  line-height: 25px;
+  transition: .5s;
+}
+.logo-title:hover {
+  text-shadow: 7px 8px 20px #fff, -7px -8px 20px #fff;
+}
+.nav-sec span {
+  width: 1px;
+  margin: 0px 10px;
+  background-color: rgba(255, 255, 255, 0.734);
+}
+.my-dItem {
+  text-shadow: 1px 1px 0px rgb(150, 151, 162);
+}
+.my-dItem:hover {
+  color: #fff !important;
+}
+/* ------------------------------------------ Main -------------------------------------- */
+main .carousel-caption {
+  line-height: 3;
+  background-color: rgba(188, 186, 186, 0.5);
+  border-radius: 8px;
+}
+.main-sec .main-sec-btn,
+.sec-1 .sec-1-btn,
+.sec-4 .sec4-btn {
+  color: rgba(255, 255, 255, 0.7);
+}
+.main-sec .main-sec-btn:hover,
+.sec-1 .sec-1-btn:hover,
+.sec-4 .sec4-btn:hover {
+  color: #fff;
+}
+/* ----------------------------------------- section 1 ----------------------------------- */
+.my-accordion-btn:hover {
+  background-color: rgb(34, 38, 42);
+  color: #fff;
+}
+/* ----------------------------------------- section 2 ----------------------------------- */
+.sec2-link,
+.sec7-link {
+  color: rgb(159, 146, 218);
+}
+.sec2-link:hover,
+.sec7-link:hover {
+  color: #fff;
+}
+.btn-msg-parent {
+  position: relative;
+}
+.btn-msg-child::after {
+  content: "copy to clipboard";
+  position: absolute;
+  min-width: 90px;
+  height: auto;
+  top: 140%;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 3px 0px;
+  background-color: rgb(151, 205, 223);
+  border-radius: 7px;
+  opacity: 0;
+  display: none;
+  font-size: 15px;
+}
+
+.btn-msg-child:hover::after {
+  opacity: 1;
+  display: block;
+}
+
+.btn-msg-child:active::after {
+  content: "copied";
+  opacity: 1;
+}
+.btn-msg-child::before {
+  content: '';
+  position: absolute;
+  top: 85%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 10px;
+  border-style: solid;
+  border-color: transparent transparent rgb(151, 205, 223) transparent;
+  opacity: 0;
+}
+.btn-msg-child:hover::before {
+  opacity: 1;
+}
+.my-code {
+  font-size: 18px;
+  padding-left: 120px;
+  line-height: 5;
+  display: block;
+  white-space: nowrap;
+
+}
+@media (max-width:730px) {
+  .code-special {
+    overflow-x: scroll;
+    padding-left: 100px;
+  }
+}
+@media (max-width:500px) {
+  .my-code {
+    overflow-x: scroll;
+    padding-left: 80px;
+  }
+}
+/* ----------------------------------------- section 3 ----------------------------------- */
+.sec3-bg-img,
+.sec5-bg-img {
+  width: 100%;
+  height: 300px;
+  background-image: url("../images/ªTsnƒó-FOánfó¬-Oftp-OÑnß-_182048401_-__.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+/* ----------------------------------------- section 4 ----------------------------------- */
+/* ----------------------------------------- section 5 ----------------------------------- */
+.sec5-bg-img {
+  background-image: url("../images/2.jpg");
+}
+/* ----------------------------------------- Footer ----------------------------------- */
